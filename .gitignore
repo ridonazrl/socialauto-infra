@@ -1,0 +1,37 @@
+# --- SECRETS (JANGAN PERNAH DI-PUSH) ---
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# --- NODE ---
+node_modules/
+npm-debug.log
+.vite/
+dist/
+
+# --- DOCKER ---
+docker-compose.override.yml
+
+# --- DATA & BACKUP ---
+backup/
+data/
+logs/
+*.bak
+*.bak-*
+*.sql
+*.tar.gz
+
+# --- OS ---
+.DS_Store
+Thumbs.db

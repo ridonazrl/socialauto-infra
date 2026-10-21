@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #080d1a;
+    color: #e2e8f0;
+  }
+}
+
+/* Custom terminal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #21262d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30363d;
+}
+
+/* Pulse animation for running status */
+@keyframes glow {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.7)); }
+  50% { opacity: 0.5; filter: drop-shadow(0 0 2px rgba(59, 130, 246, 0.3)); }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
